@@ -1,0 +1,11 @@
+t = input('请输入一组数字（以逗号分隔）：')
+l = t.split(',')
+l = [int(i) for i in l]
+max = l[0]
+min = l[0]
+for i in l:
+    if i > max:
+        max = i
+    elif i < min:
+        min = i
+print('最大值是：',max,'最小值是：',min)
